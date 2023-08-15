@@ -18,11 +18,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> {% if is_js %}<span translate="repeat">Array</span> of <span translate="repeat">numbers</span>{% else %}<span translate="repeat">List</span> of <span translate="repeat">integers</span>{% endif %}.
+    <strong>Input:</strong> <span translate="repeat">{% if is_js %}Array{% else %}List{% endif %}</span> of integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Output:</strong> {% if is_js %}<span translate="repeat">Number</span>{% else %}<span translate="repeat">Integer</span>{% endif %}. 
+    <strong>Output:</strong> Integer <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 
