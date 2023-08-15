@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Dans le problème <a target="_blank" href="https://en.wikipedia.org/wiki/Domino_tiling">domino tiling</a>, une pièce composée de carrés contigus doit être tessellée avec des dominos vierges 2 par 1, chacun de ces dominos étant placé soit verticalement, soit horizontalement.
+</p>
+<p style="text-align: justify;">
+    Dans notre version de la mosaïque de dominos, la forme de la pièce consiste en des rangées empilées verticalement qui partagent toutes la ligne droite commune du mur de gauche. Le tableau {% if is_js %}{% else %} liste{% endif %} de <b>rows</b> contient la longueur des différentes rangées, mesurée en carrés. <b>You need to find and return a number of ways, how the given room may be tiled.</b>
+</p>
+<p style="text-align: justify;">
+    Bien entendu, la tâche de poser des dominos ne peut être résolue que pour des pièces de taille égale. Mais cette condition nécessaire en elle-même ne garantit pas encore l'existence d'un carrelage sur les pièces mutilées, comme dans cette mission. Voici une vidéo intéressante et utile pour approfondir le problème:
+</p>
+<p style="text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yy7Q8IWNfHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Input:</strong> {% if is_js %}Tableau <span>(Array)</span> de nombres <span>(numbers)</span>{% else %} Liste <span>(List)</span> d'entiers <span>(integers)</span>{% endif %}.
+</p>
+
+<p>
+   <strong>Sortie:</strong> {% if is_js %}Nombre <span>(Number)</span>{% else %} Entier <span>(Integer)</span>{% endif %}. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p><i>La mission a été tirée de Python CCPS 109. Elle est enseignée pour la Ryerson Chang School of Continuing Education par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
