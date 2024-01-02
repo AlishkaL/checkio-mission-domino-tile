@@ -4,10 +4,10 @@
     在<a target="_blank" href="https://en.wikipedia.org/wiki/Domino_tiling">domino tiling</a> 问题中，一个由连续单位方格组成的房间需要用空白的 2×1 多米诺牌拼成，每块多米诺牌可以竖着放，也可以横着放。
 </p>
 <p style="text-align: justify;">
-    在我们的多米诺瓷砖铺贴版本中，房间的形状由垂直堆叠的行组成，所有行共享左侧墙壁的共同直线。<b>rows</b> 的{% if is_js %}数组{% else %}列表{% endif %} 包含以方格为单位的各行长度。<b>You need to find and return a number of ways, how the given room may be tiled.</b>
+    在我们的多米诺瓷砖铺贴版本中，房间的形状由垂直堆叠的行组成，这些行共享共同的直线左墙。<b>rows</b> 的{% if is_js %}数组{% else %}列表{% endif %} 包含以方格为单位的各行长度。<b>You need to find and return a number of ways, how the given room may be tiled.</b>
 </p>
 <p style="text-align: justify;">
-    当然，只有在房间大小均匀的情况下，才能完成多米诺骨牌镶嵌的任务。但这一必要条件本身并不能保证在残缺的房间中存在某种拼法，就像这次任务中一样。这里有一个有趣而有用的视频，可以帮助你深入了解这个问题：
+    当然，只有在房间大小为偶数的情况下，才能完成多米诺骨牌铺贴的任务。但这一必要条件本身并不能保证在残缺的房间中存在某种拼法，就像这次任务中一样。这里有一个有趣而有用的视频，可以帮助你深入了解这个问题：
 </p>
 <p style="text-align: center;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Yy7Q8IWNfHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -18,21 +18,21 @@
 
 <!-- Explain input and output values -->
 <p>
-   <strong>输入：</strong> {% if is_js %}数字数组<span>(Array)</span> <span>(numbers)</span> {% else %} 整数列表<span>(List)</span> <span>(integers)</span> {% endif %} 。
+   <strong>输入：</strong> {% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span>的整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-   <strong>输出：</strong> {% if is_js %}数字<span>(Number)</span>{% else %} 整数<span>(Integer)</span>{% endif %} 。 
+   <strong>输出：</strong>整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 
 <p>
-    <strong>示例：</strong>
+    <strong>示例</strong>
 </p>
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 
-<p><i>任务来自 Python CCPS 109。该课程由张瑞森继续教育学院教授。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<p><i>任务摘自 Python CCPS 109。该课程由张瑞敏继续教育学院教授。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
 <!-- Here you can explain how it can be used in development -->
 <!-- The section is optional -->
 <!-- <p class="for_info_only">
