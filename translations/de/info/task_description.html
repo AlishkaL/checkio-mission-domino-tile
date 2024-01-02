@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Beim <a target="_blank" href="https://en.wikipedia.org/wiki/Domino_tiling">domino tiling</a> Problem soll ein Raum mit zusammenhängenden Einheitsquadraten mit leeren 2 x 1 Dominosteinen tesseliert werden, wobei jeder dieser Steine entweder vertikal oder horizontal platziert wird.
+</p>
+<p style="text-align: justify;">
+    In unserer Version der Domino-Kacheln besteht die Form des Raumes aus vertikal gestapelten Reihen, die alle eine gemeinsame gerade linke Wand haben. Das Array {% if is_js %}{% else %} list{% endif %} von <b>rows</b> enthält die Länge der einzelnen Reihen, gemessen in Quadraten. <b>You need to find and return a number of ways, how the given room may be tiled.</b>
+</p>
+<p style="text-align: justify;">
+    Natürlich kann die Aufgabe des Domino-Kachelns nur für gerade Raumgrößen gelöst werden. Aber diese notwendige Bedingung allein garantiert noch nicht, dass die verstümmelten Räume, wie in dieser Mission, überhaupt gekachelt werden können. Hier ist ein interessantes und nützliches Video, um in das Problem einzutauchen:
+</p>
+<p style="text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yy7Q8IWNfHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> {% if is_js %}Array{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> von ganzen Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ganzzahl <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p><i>Die Aufgabe wurde aus Python CCPS 109 übernommen. Sie wird für die Ryerson Chang School of Continuing Education unterrichtet von <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
