@@ -18,11 +18,11 @@
 
 <!-- Explain input and output values -->
 <p>
-   <strong>Input:</strong> {% if is_js %}Tableau <span>(Array)</span> de nombres <span>(numbers)</span>{% else %} Liste <span>(List)</span> d'entiers <span>(integers)</span>{% endif %}.
+   <strong>Input:</strong> {% if is_js %}Tableau{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> d'entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-   <strong>Sortie:</strong> {% if is_js %}Nombre <span>(Number)</span>{% else %} Entier <span>(Integer)</span>{% endif %}. 
+   <strong>Sortie:</strong> Entier <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 
@@ -32,7 +32,7 @@
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 
-<p><i>La mission a été tirée de Python CCPS 109. Elle est enseignée pour la Ryerson Chang School of Continuing Education par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<p><i>La mission a été tirée de Python CCPS 109. Il est enseigné pour l'école d'éducation permanente Ryerson Chang par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
 <!-- Here you can explain how it can be used in development -->
 <!-- The section is optional -->
 <!-- <p class="for_info_only">
