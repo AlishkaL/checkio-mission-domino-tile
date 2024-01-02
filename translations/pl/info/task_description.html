@@ -18,11 +18,11 @@
 
 <!-- Explain input and output values -->
 <p>
-   <strong>Wejście:</strong> {% if is_js %}Tablica <span>(Array)</span> liczb <span>(numbers)</span>{% else %} Lista <span>(List)</span> liczb całkowitych <span>(integers)</span>{% endif %}.
+   <strong>Input:</strong> {% if is_js %}Array{% else %}List{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-   <strong>Wyjście:</strong> {% if is_js %}Liczba <span>(Number)</span>{% else %} Integer{% endif %}. 
+   <strong>Dane wyjściowe:</strong> Liczba całkowita <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 
@@ -32,7 +32,7 @@
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 
-<p><i>Misja została zaczerpnięta z Python CCPS 109. Jest nauczana dla Ryerson Chang School of Continuing Education przez <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<p><i>Misja została zaczerpnięta z Python CCPS 109. Jest on prowadzony dla Ryerson Chang School of Continuing Education przez <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
 <!-- Here you can explain how it can be used in development -->
 <!-- The section is optional -->
 <!-- <p class="for_info_only">
