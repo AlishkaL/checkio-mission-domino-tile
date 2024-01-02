@@ -1,13 +1,13 @@
 <!-- Describe task in general -->
 
 <p style="text-align: justify;">
-    У задачі <a target="_blank" href="https://en.wikipedia.org/wiki/Domino_tiling">замощення плитками доміно</a> простір з суміжних одиничних квадратів потрібно замостити порожніми плитками доміно розміром 2 на 1, причому кожна така плитка розміщується або вертикально, або горизонтально.
+    У задачі <a target="_blank" href="https://en.wikipedia.org/wiki/Domino_tiling">domino tiling</a> кімнату з суміжних одиничних квадратів потрібно замостити порожніми кубиками доміно розміром 2 на 1, причому кожен такий кубик розміщується або вертикально, або горизонтально.
 </p>
 <p style="text-align: justify;">
-    У нашій версії завдання простір для замощення складається з вертикально укладених рядів, які мають спільну пряму ліву стіну. {% if is_js %}Масив{% else %}Список{% endif %} <b>rows</b> містить довжину кожного рядка в одиничних квадратах. <b>Вам потрібно знайти і повернути кількість способів, якими можна замостити заданий простір.</b>
+    У нашому варіанті викладання плитки доміно форма кімнати складається з вертикально розташованих рядів, які мають спільну пряму ліву стіну. Масив {% if is_js %}{% else %} , список{% endif %} з <b>rows</b> містить довжину окремих рядів, виміряну в квадратах. <b>You need to find and return a number of ways, how the given room may be tiled.</b>
 </p>
 <p style="text-align: justify;">
-    Звісно, задачу про замощення плитками доміно можна розв'язати лише для простору парного розміру. Але ця необхідна умова сама по собі ще не гарантує існування патерну замощення на нестандартних просторах, як у цій місії. Ось цікаве і корисне відео для занурення у проблему:
+    Звісно, задачу укладання плитки доміно можна розв'язати лише для парних розмірів приміщення. Але ця необхідна умова сама по собі ще не гарантує існування якоїсь плитки на понівечених кімнатах, як у цій місії. Ось цікаве і корисне відео для занурення в проблему:
 </p>
 <p style="text-align: center;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Yy7Q8IWNfHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -18,11 +18,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Вхідні дані:</strong> {% if is_js %}Масив (array) цілих чисел (numbers){% else %}Список (list) цілих чисел (integers){% endif %}.
+   <strong>Вхідні дані:</strong> {% if is_js %}Масив{% else %}Список{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> цілих чисел <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Вихідні дані:</strong> Ціле число ({% if is_js %}number{% else %}int{% endif %}). 
+   <strong>Вивести:</strong> Ціле число <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 
@@ -32,7 +32,7 @@
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 
-<p><i>Ця місія взяти з курсу Python CCPS 109. Він викладався в Ryerson Chang School of Continuing Education <a href="http://www.scs.ryerson.ca/~ikokkari/">Ilkka Kokkarinen</a></i></p>
+<p><i>Місія була взята з Python CCPS 109. Його викладають у Ryerson Chang School of Continuing Education <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
 <!-- Here you can explain how it can be used in development -->
 <!-- The section is optional -->
 <!-- <p class="for_info_only">
